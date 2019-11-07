@@ -23,4 +23,5 @@ p2 <- ggplot(data[-1,], aes(x=start.year, y=total.percent.growth)) +
   geom_point(color="red", size=2) +
   scale_x_continuous("year", breaks=x.breaks) +
   scale_y_continuous("assessed value percent growth", breaks=y.breaks) +
-  theme(panel.grid.minor = element_blank(), panel.grid.major = element_line(color="gray40"), panel.background = element_rect(fill="navy"))
+  theme(panel.grid.minor = element_blank(), panel.grid.major = element_line(color="gray40"), panel.background = element_rect(fill="navy"), 
+        axis.text.x = element_text(angle = 90, hjust = 1))
